@@ -48,6 +48,12 @@ class Film
      * @ORM\Column(name="folder", type="string", length=255, nullable=true)
      */
     private $folder;
+    /**
+     *      
+     * @ORM\OneToMany(targetEntity="commentaires")
+     * @ORM\JoinColumn(name="film_id", referencedColumnName="id")
+     */
+
 
 
     /**
